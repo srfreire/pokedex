@@ -10,6 +10,10 @@ app.get("/version", (req, res) => {
   res.send("1.0.0");
 });
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
