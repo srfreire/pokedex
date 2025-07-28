@@ -11,4 +11,7 @@ jobs:
     steps:
       - name: Say hello
         run: |
-          echo "Hello World!"
+          echo "Hello World!" 
+          echo "The time is $(date)"
+          echo "The user is $(whoami)"
+          echo "The current directory has $(ls -l)"
