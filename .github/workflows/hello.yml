@@ -12,6 +12,12 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!" 
-          echo "The time is $(date)"
-          echo "The user is $(whoami)"
-          echo "The current directory has $(ls -l)"
+      - name: What time is it?
+        run: |
+          date
+      - name: Who am I?
+        run: |
+          whoami
+      - name: List directory
+        run: |
+          ls -l
